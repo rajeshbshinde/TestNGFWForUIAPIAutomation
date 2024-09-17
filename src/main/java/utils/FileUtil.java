@@ -454,7 +454,7 @@ public class FileUtil {
 		try {
 			File path = new File(folderPath);
 			if (!path.exists()) {
-				Log.Message("Creating fresg folder...." + folderPath, LogLevel.INFO);
+				Log.Message("Creating fresh folder...." + folderPath, LogLevel.INFO);
 				path.mkdir();
 			} else {
 				String[] entries = path.list();
@@ -470,7 +470,7 @@ public class FileUtil {
 				}
 			}
 		} catch (Exception e) {
-			Log.Message("Error occured while deleting downloaded zip files", LogLevel.ERROR);
+			Log.Message("Error occurred while deleting downloaded zip files", LogLevel.ERROR);
 			e.printStackTrace();
 		}
 	}
@@ -510,7 +510,7 @@ public class FileUtil {
 			}
 
 		} catch (Exception e) {
-			Log.Message("Error occured while deleting downloaded zip files", LogLevel.ERROR);
+			Log.Message("Error occurred while deleting downloaded zip files", LogLevel.ERROR);
 			e.printStackTrace();
 		}
 	}
@@ -525,7 +525,7 @@ public class FileUtil {
 		try {
 			file.createNewFile();
 		} catch (IOException e) {
-			Log.Message("Error occured while creating new file", LogLevel.ERROR);
+			Log.Message("Error occurred while creating new file", LogLevel.ERROR);
 			e.printStackTrace();
 		}
 	}
